@@ -17,6 +17,8 @@ class Hello extends Controller
     public function index()
     {
         //
+        return 'hello world from controller : )';
+
     }
 
     /**
@@ -46,9 +48,9 @@ class Hello extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show($id)
+    public function show($name)
     {
-        //
+        return view('hello',array('name' => $name));
     }
 
     /**
